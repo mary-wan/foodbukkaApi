@@ -1,0 +1,13 @@
+<div class="container-fluid m-0 row">
+  <div class="card col-lg-4 m-2" style="width: 18rem;" *ngFor="let restaurant of restaurants">
+    <img class="card-img-top" src="{{restaurant.image}}" alt="Card image cap" height="200">
+    <div class="card-body">
+      <h5 class="card-title">{{restaurant.businessname}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{restaurant.restauranttype}}</h6>
+      <p>Reviews: {{restaurant.reviews}}</p>
+      <p>{{restaurant.location}}: {{restaurant.phone}} </p>
+      <p> {{restaurant.email}}</p>
+    </div>
+  </div>
+
+</div>
